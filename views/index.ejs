@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>!JOKES!</title>
+    <link rel="stylesheet" type="text/css" href="/styles.css">
+</head>
+<body>
+    <h1>Random Jokes 🤣</h1>
+    <small>Click the button below to get a random joke</small>
+    <button id="newJoke" onclick="window.location.href='/'">New Joke</button>
+    <div class="response-area">
+        <% if (Joke) { %> 
+            <p>
+                <%= Joke %> 
+            </p>
+        <% } else { %>
+            <p>
+                Click the button for a new joke!
+            </p>
+        <% } %>
+    </div>
+</body>
+</html>
